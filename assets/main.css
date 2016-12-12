@@ -1,3 +1,33 @@
 body {
-    background-color: #fff;
+    background-color: #335bdf;
+    font-family: 'Bangers', cursive;
+}
+
+#wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#monster {
+    height: auto;
+    width: auto;
+    max-height: 400px;
+}
+
+#text {
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    opacity: .99;
+}
+
+#name {
+    color: #fff;
+}
+
+.cookie-image {
+    max-width: 50px;
 }

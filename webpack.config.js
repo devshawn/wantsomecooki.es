@@ -11,7 +11,14 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
-            { test: /\.pug$/, loader: 'pug-loader' }
+            { test: /\.pug$/, loader: 'pug-loader' },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loaders: [
+                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                ]
+            }
         ]
     },
     plugins: [

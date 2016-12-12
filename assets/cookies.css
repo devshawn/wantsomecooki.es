@@ -1,0 +1,15 @@
+#cookie-jar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+
+.cookie {
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+}
+.cookie:hover {
+    cursor: default;
+}
