@@ -6,7 +6,22 @@
   "repository": "git@github.com:devshawn/wantsomecooki.es.git",
   "author": "Shawn Seymour <shawn@devshawn.com>",
   "license": "MIT",
+  "scripts": {
+      "build": "./node_modules/webpack/bin/webpack.js",
+      "serve": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --content-base public/"
+  },
   "dependencies": {
     "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "image-loader": "^0.0.1",
+    "pug-loader": "^2.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
