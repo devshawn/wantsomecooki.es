@@ -1,0 +1,12 @@
+{
+  "name": "wantsomecooki.es",
+  "version": "1.0.0",
+  "description": "Do you want some cookies?!",
+  "main": "index.js",
+  "repository": "git@github.com:devshawn/wantsomecooki.es.git",
+  "author": "Shawn Seymour <shawn@devshawn.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pug": "^2.0.0-beta6"
+  }
+}
