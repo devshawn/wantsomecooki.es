@@ -28,6 +28,13 @@ body {
     color: #fff;
 }
 
+#github {
+  z-index: 10000;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
 .cookie-image {
     max-width: 50px;
 }

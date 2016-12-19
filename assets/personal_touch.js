@@ -22,5 +22,5 @@ function replace() {
     if (!name) return;
 
     var node = document.getElementById("text");
-    node.innerText = name.toUpperCase() + " WANT SOME COOKIES!!1!"; 
+    node.innerText = name.toUpperCase() + " WANT SOME COOKIES!!??!1!11?!11?!";
 }

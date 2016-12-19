@@ -4,9 +4,12 @@ html
         title= htmlWebpackPlugin.options.title
         link(href='https://fonts.googleapis.com/css?family=Bangers', rel='stylesheet')
     body
+        div(id="github")
+          a(href="https://github.com/devshawn/wantsomecooki.es")
+            img(src=require("../assets/images/github.png"))
         div(id="cookie-jar")
             p(class="cookie")
-                img(src=require("../assets/cookie.png"), class="cookie-image")
+                img(src=require("../assets/images/cookie.png"), class="cookie-image")
         div(id="wrapper")
-            img(src=require("../assets/monster.png"), id="monster")
-            p(id="text") WANT SOME COOKIES?!
+            img(src=require("../assets/images/monster.png"), id="monster")
+            p(id="text") WANT SOME COOKIES?!?
