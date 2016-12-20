@@ -1,6 +1,7 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './assets/entry.js',
@@ -27,6 +28,9 @@ module.exports = {
       template: 'templates/main.pug',
       title: 'Want some cookies?'
     }),
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('styles.css'),
+    new CopyWebpackPlugin([
+      { from: './assets/sounds', to: 'sounds'}
+    ])
   ]
 };

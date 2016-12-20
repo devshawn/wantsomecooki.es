@@ -23,4 +23,11 @@ function replace() {
 
     var node = document.getElementById("text");
     node.innerText = name.toUpperCase() + " WANT SOME COOKIES!!??!1!11?!11?!";
-}
+
+    var sounds = require('./sounds.js');
+
+    if(sounds.indexOf(name) > -1) {
+      var audio = document.getElementById("audio");
+      audio.innerHTML += '<source src="sounds/' + name + '.mp3">';
+    }
+  }

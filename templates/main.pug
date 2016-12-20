@@ -1,15 +1,17 @@
 doctype html
-html
+html(lang="en")
     head
+        meta(charset="utf-8")
         title= htmlWebpackPlugin.options.title
         link(href='https://fonts.googleapis.com/css?family=Bangers', rel='stylesheet')
     body
-        div(id="github")
-          a(href="https://github.com/devshawn/wantsomecooki.es")
-            img(src=require("../assets/images/github.png"))
         div(id="cookie-jar")
             p(class="cookie")
                 img(src=require("../assets/images/cookie.png"), class="cookie-image")
         div(id="wrapper")
             img(src=require("../assets/images/monster.png"), id="monster")
             p(id="text") WANT SOME COOKIES?!?
+        div(id="github")
+          a(href="https://github.com/devshawn/wantsomecooki.es")
+            img(src=require("../assets/images/github.png"))
+        audio(id="audio", autoplay, loop)
